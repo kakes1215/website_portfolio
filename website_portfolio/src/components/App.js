@@ -6,9 +6,6 @@ import Project from './Projects';
 import Skills from './Skills';
 import Contact from './Contact';
 
-
-
-
 function App() {
   return (
     <div className="App">

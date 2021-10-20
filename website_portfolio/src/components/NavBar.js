@@ -5,7 +5,7 @@ function NavBar() {
 
     return (
         <>
-            <Pane position="fixed" right={0} top="50%">
+            <Pane position="fixed" right={0} top="40%">
                 <Menu.Item>Skills</Menu.Item>
                 <Menu.Item>About Me</Menu.Item>
                 <Menu.Item>Projects</Menu.Item>
