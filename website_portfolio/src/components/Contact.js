@@ -5,6 +5,7 @@ function Contact() {
     return (
         <>
             <Pane margin="15%" height="100%" width="60%" marginLeft={120}>
+                <Heading height="100%" width="60%" marginLeft={120} size={800}>Contact Me</Heading>
                 <Pane
                     elevation={3}
                     float="left"
