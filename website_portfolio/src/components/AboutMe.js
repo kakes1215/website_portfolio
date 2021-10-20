@@ -3,7 +3,7 @@ import { Pane, Heading } from 'evergreen-ui'
 import MainNavBar from './NavBar';
 import ComputerImage from '../images/computer.jpg'
 
-function ShowGreeting() {
+function AboutMe() {
 
     return (
         <>
@@ -29,4 +29,4 @@ function ShowGreeting() {
     )
 }
 
-export default ShowGreeting
+export default AboutMe
