@@ -1,14 +1,23 @@
 import '../css/App.css';
-import ShowGreeting from './Greeting';
-import AboutMe from './AboutMe'
+import Greeting from './Greeting';
+import NavBar from './NavBar';
+import AboutMe from './AboutMe';
+import Project from './Projects';
+import Skills from './Skills';
+import Contact from './Contact';
+
 
 
 
 function App() {
   return (
     <div className="App">
-      <ShowGreeting />
+      <Greeting />
+      <NavBar />
       <AboutMe />
+      <Project />
+      <Skills />
+      <Contact />
     </div>
   );
 }

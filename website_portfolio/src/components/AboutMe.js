@@ -1,15 +1,11 @@
 import React from 'react';
 import { Pane, Heading } from 'evergreen-ui'
-import MainNavBar from './NavBar';
 import ComputerImage from '../images/computer.jpg'
 
 function AboutMe() {
 
     return (
         <>
-            <Pane display="flex" width="100%" paddingLeft="30%" paddingBottom="5%" position="fixed">
-                <MainNavBar />
-            </Pane>
             <Pane display="flex">
                 <Pane margin={15} height={300} width="40%" align="left">
                     <Heading paddingTop={100} paddingBottom={25} size={900}>

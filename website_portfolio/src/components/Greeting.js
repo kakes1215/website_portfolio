@@ -2,10 +2,10 @@ import React from 'react';
 import { Pane, Heading } from 'evergreen-ui'
 
 
-function ShowGreeting() {
+function Greeting() {
     return (
         <>
-            <Pane padding="25%">
+            <Pane padding={300}>
                 <Heading size="900">
                     HELLO THERE
                 </Heading>
@@ -14,4 +14,4 @@ function ShowGreeting() {
 
     )
 }
-export default ShowGreeting
+export default Greeting
