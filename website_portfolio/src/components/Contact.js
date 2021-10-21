@@ -48,6 +48,7 @@ function Contact() {
                     <Text>Email</Text>
                     <Text size={300}>Floating Panes</Text>
                 </Pane>
+
             </Pane>
             <Pane marginTop={450}>
                 <Heading height="100%" width="60%" marginLeft={120} size={800}>Send Message</Heading>
