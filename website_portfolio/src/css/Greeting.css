@@ -1,0 +1,84 @@
+.CircleA {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #A73636;
+    position: relative;
+    animation: first 5s 2;
+    animation-direction: alternate;
+    padding: 20px;
+    margin: 30px;
+  }
+  
+  @keyframes first {
+    0%   {background: #A73636; left: 0px; top: 0px;}
+    25%  {background: #F9DADA; left: 200px; top: 0px;}
+  }
+
+  .CircleB {
+    width: 140px;
+    height: 140px;
+    border-radius: 100%;
+    background: #214C3C;
+    position: relative;
+    animation: second 5s 2;
+    animation-direction: alternate;
+    padding: 10px;
+    margin: 50px;
+  }
+  
+  @keyframes second {
+    0%   {background: #214C3C; left: 0px; top: 0px;}
+    25%  {background: #BAE5D5; left: 200px; top: 0px;}
+  }
+
+  .CircleC {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    background: #996A13;
+    position: relative;
+    animation: third 5s 2;
+    animation-direction: alternate;
+    padding: 20px;
+    margin: 30px;
+  }
+  
+  @keyframes third {
+    0%   {background: #996A13; left: 0px; top: 0px;}
+    25%  {background: #FFB020; left: 200px; top: 0px;}
+  }
+
+  .CircleD {
+    width: 200px;
+    height: 200px;
+    border-radius: 60%;
+    background: #A73636;
+    position: relative;
+    animation: fourth 5s 2;
+    animation-direction: alternate;
+    padding: 50px;
+    margin: 70px;
+  }
+  
+  @keyframes fourth {
+    0%   {background: #6E62B6; left: 0px; top: 0px;}
+    25%  {background: #E7E4F9; left: 200px; top: 0px;}
+  }
+
+  .CircleE {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: #0F5156;
+    position: relative;
+    animation: fifth 5s 2;
+    animation-direction: alternate;
+    padding: 20px;
+    margin: 30px;
+  }
+  
+  @keyframes fifth {
+    0%   {background: #0F5156; left: 0px; top: 0px;}
+    25%  {background: #D3F5F7; left: 200px; top: 0px;}
+  }
