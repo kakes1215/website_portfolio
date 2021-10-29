@@ -10,7 +10,7 @@ function App() {
   return (
     <div className="App">
       <Greeting />
-      <NavBar />
+      {/* <NavBar /> */}
       <AboutMe />
       <Project />
       <Skills />
