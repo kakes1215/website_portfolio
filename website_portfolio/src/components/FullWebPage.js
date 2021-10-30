@@ -1,33 +1,25 @@
 import React, { } from 'react';
-
-import { Grommet, Paragraph, Box, Text, Grid } from 'grommet';
-import { grommet } from 'grommet/themes';
-
 import Greeting from './HomePage/Greeting';
 import AboutMe from './AboutMe';
-import Project from './Projects';
-import Skills from './Skills';
-import Contact from './Contact';
+import Divider from './Divider';
+import { Parallax, ParallaxLayer } from '@react-spring/parallax'
+
 
 
 function FullWebPage() {
     return (
         <>
-            <div>
-                <Greeting />
-            </div>
-            <div>
-                <AboutMe />
-            </div>
-            {/* <div>
-                <Project />
-            </div>
-            <div>
-                <Skills />
-            </div>
-            <div>
-                <Contact />
-            </div> */}
+            <Parallax pages={2}>
+                <ParallaxLayer offset={0} speed={1} >
+                    <Greeting />
+                </ParallaxLayer>
+                <ParallaxLayer offset={.9} speed={2} >
+                    <Divider />
+                </ParallaxLayer>
+                <ParallaxLayer offset={.95} speed={1}>
+                    <AboutMe />
+                </ParallaxLayer>
+            </Parallax>
         </>
     );
 }

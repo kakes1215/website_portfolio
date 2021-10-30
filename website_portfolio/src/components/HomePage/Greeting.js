@@ -7,7 +7,7 @@ import { Down } from 'grommet-icons';
 function Greeting() {
     return (
         <Grommet theme={grommet} full>
-            <Box background='neutral-2' pad='large' fill>
+            <Box background='neutral-2' fill>
                 <Grid
                     rows={['auto', 'flex', 'flex']}
                     columns={['auto']}
@@ -26,8 +26,8 @@ function Greeting() {
                         <Text size="5xl" color='#FFBCFF'>I develop web applications.</Text>
                     </Box>
                     <Box gridArea='introParagraph' align="start">
-                        <Paragraph textAlign='start' color='accent-1'>
-                            I'm a aspiring Software Engineer that specializes in Front End and Full Stack Development for web applications.
+                        <Paragraph textAlign='start' color='accent-1' size='large'>
+                            I'm an aspiring Software Engineer that specializes in Front End and Full Stack Development for web applications.
                         </Paragraph>
                     </Box>
                 </Grid>

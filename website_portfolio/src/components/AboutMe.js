@@ -1,8 +1,7 @@
 import React, { } from 'react';
 
-import { Grommet, Paragraph, Box, Text, Grid, Main } from 'grommet';
+import { Grommet, Paragraph, Box, Text, Grid } from 'grommet';
 import { grommet } from 'grommet/themes';
-import { Pane, Heading } from 'evergreen-ui'
 import aboutMePicture from '../images/aboutme.jpg'
 
 function AboutMe() {
@@ -19,15 +18,15 @@ function AboutMe() {
                         ]}
                         pad='none'
                     >
-                        <Box gridArea="aboutMeWords" background='neutral-2'>
+                        <Box pad='large' gridArea="aboutMeWords" background='neutral-2'>
                             <Text size='4xl' color='accent-2'>About Me</Text>
                             <Paragraph size='xlarge'>
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sit amet erat risus.
                                 Donec malesuada orci et nibh pharetra, ac egestas purus congue.
                             </Paragraph>
                         </Box>
-                        <Box gridArea="aboutMePicture" align='center' background='neutral-2'>
-                            <img height='500px' width='300px' src={aboutMePicture} />
+                        <Box pad='large' gridArea="aboutMePicture" align='center' background='neutral-2'>
+                            <img alt='person' height='500px' width='300px' src={aboutMePicture} />
                         </Box>
 
 
