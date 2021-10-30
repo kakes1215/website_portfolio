@@ -1,15 +1,14 @@
 import React, { } from 'react';
 import { grommet } from 'grommet/themes';
-import { Grommet, Paragraph, Box, Text, Grid, Header, Nav, Button } from 'grommet';
-import { Down } from 'grommet-icons';
+import { Grommet, Header, Nav, Button } from 'grommet';
 
 
 function MainNavBar() {
     return (
         <>
-            <Grommet theme={grommet} full>
-                <Header background='neutral-2'>
-                    <Nav direction='row-responsive' pad='small'>
+            <Grommet theme={grommet} full >
+                <Header background='neutral-2' justify='end' pad='large' width='auto'>
+                    <Nav direction='row' focusIndicator='true' pad='medium' style={{ position: 'fixed' }}>
                         <Button defualt label="About Me" />
                         <Button defualt label="Experience" />
                         <Button defualt label="Projects" />

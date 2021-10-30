@@ -1,4 +1,7 @@
-import React from 'react';
+import React, { } from 'react';
+
+import { Grommet, Paragraph, Box, Text, Grid, Main } from 'grommet';
+import { grommet } from 'grommet/themes';
 import { Pane, Heading } from 'evergreen-ui'
 import ComputerImage from '../images/computer.jpg'
 
@@ -6,19 +9,27 @@ function AboutMe() {
 
     return (
         <>
-            <Pane display="flex">
-                <Pane margin={15} height={300} width="40%" align="left">
-                    <Heading paddingTop={100} paddingBottom={25} size={900}>
-                        About Me
-                    </Heading>
-                    <Heading width="90%" size={500}>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.Vestibulum commodo interdum quam, nec pretium felis congue quis. consectetur adipiscing elit.
-                    </Heading>
-                </Pane>
-                <Pane paddingLeft={60} width="40%">
-                    <img height="100%" width="100%" src={ComputerImage} alt="computer_graphic" />
-                </Pane>
-            </Pane>
+            <Grommet theme={grommet}>
+                <Box>
+                    <Grid
+                        rows={['auto']}
+                        columns={['1/2', '1/2`']}
+                        areas={[
+                            ['aboutMeWords', 'aboutMePicture'],
+                        ]}
+                        pad='none'
+                    >
+                        <Box gridArea="aboutMeWords" background='brand'>
+                            jsdlfkjsadk;fjdf
+                        </Box>
+                        <Box gridArea="aboutMePicture" background='grey'>
+                            sdajf;lksdjfkl;sdajfsdk;ljf
+                        </Box>
+
+
+                    </Grid>
+                </Box>
+            </Grommet>
 
         </>
 

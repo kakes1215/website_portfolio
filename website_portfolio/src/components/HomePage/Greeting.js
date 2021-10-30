@@ -7,7 +7,7 @@ import { Down } from 'grommet-icons';
 function Greeting() {
     return (
         <Grommet theme={grommet} full>
-            <Box background={{ color: 'neutral-2' }} width='100%'>
+            <Box background='neutral-2' pad='large' fill>
                 <Grid
                     rows={['auto', 'flex', 'flex']}
                     columns={['auto']}
@@ -31,13 +31,13 @@ function Greeting() {
                         </Paragraph>
                     </Box>
                 </Grid>
+
                 <Box gridArea='downArrow' animation={{ type: 'pulse', duration: 1000 }} align='center' pad='small' margin='medium'>
                     <Down color='accent-1' size='large' />
                     <Down color='accent-1' size='large' />
                 </Box>
             </Box>
-        </Grommet >
-
+        </Grommet>
     )
 
 }
