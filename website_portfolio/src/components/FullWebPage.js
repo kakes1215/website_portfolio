@@ -9,7 +9,7 @@ import { Parallax, ParallaxLayer } from '@react-spring/parallax'
 function FullWebPage() {
     return (
         <>
-            <Parallax pages={2}>
+            <Parallax pages={3}>
                 <ParallaxLayer offset={0} speed={1} >
                     <Greeting />
                 </ParallaxLayer>
@@ -19,6 +19,7 @@ function FullWebPage() {
                 <ParallaxLayer offset={.95} speed={1}>
                     <AboutMe />
                 </ParallaxLayer>
+
             </Parallax>
         </>
     );
