@@ -3,13 +3,14 @@ import Greeting from './HomePage/Greeting';
 import AboutMe from './AboutMe';
 import Divider from './Divider';
 import { Parallax, ParallaxLayer } from '@react-spring/parallax'
+import Experience from './Experience';
 
 
 
 function FullWebPage() {
     return (
         <>
-            <Parallax pages={3}>
+            {/* <Parallax pages={3}>
                 <ParallaxLayer offset={0} speed={1} >
                     <Greeting />
                 </ParallaxLayer>
@@ -18,9 +19,10 @@ function FullWebPage() {
                 </ParallaxLayer>
                 <ParallaxLayer offset={.95} speed={1}>
                     <AboutMe />
-                </ParallaxLayer>
+                </ParallaxLayer> */}
+            <Experience />
 
-            </Parallax>
+            {/* </Parallax> */}
         </>
     );
 }
