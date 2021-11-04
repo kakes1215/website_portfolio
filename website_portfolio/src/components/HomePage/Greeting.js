@@ -8,15 +8,16 @@ function Greeting() {
     return (
         <Box background='neutral-2'>
             <Grid
-                rows={['auto', 'flex', 'flex', 'flex']}
-                columns={['auto']}
+                rows={['auto', 'auto', 'auto', 'auto']}
+                columns={['xlarge']}
                 areas={[
                     ['helloText'],
                     ['nameText'],
                     ['introParagraph'],
                     ['downArrow']
                 ]}
-                pad='large'
+                pad='medium'
+                margin='medium'
             >
                 <Box gridArea='helloText' align="start">
                     <Text size="xlarge" color="accent-1">Hello, my name is</Text>

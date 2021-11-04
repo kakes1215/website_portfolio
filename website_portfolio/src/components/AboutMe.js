@@ -9,7 +9,7 @@ function AboutMe() {
     return (
         <>
             <Grommet theme={grommet}>
-                <Box>
+                <Box background='neutral-2' fill>
                     <Grid
                         rows={['auto']}
                         columns={['1/2', '1/2']}
