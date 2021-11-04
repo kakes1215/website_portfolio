@@ -6,8 +6,8 @@ import { grommet } from 'grommet/themes';
 import FullWebPage from './FullWebPage';
 import MainNavBar from './NavBar/MainNavBar';
 import SocialMediaLinks from './NavBar/SocialMediaLinks';
-import Greeting from './HomePage/Greeting';
-import MainPageFooter from './MainPageFooter';
+import Greeting from './MainComponents/Greeting';
+import MainPageFooter from './NavBar/MainPageFooter';
 
 
 function App() {

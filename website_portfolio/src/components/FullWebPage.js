@@ -1,14 +1,13 @@
 import React, { } from 'react';
-import Greeting from './HomePage/Greeting';
-import AboutMe from './AboutMe';
-import Divider from './Divider';
+import Greeting from './MainComponents/Greeting';
+import AboutMe from './MainComponents/AboutMe';
 import { Parallax, ParallaxLayer } from '@react-spring/parallax'
-import Experience from './Experience';
+import Experience from './MainComponents/Experience';
 import { Box } from 'grommet';
-import ProjectContainer from './Projects/ProjectContainer';
-import ContactMe from './ContactMe';
-import MainPageFooter from './MainPageFooter';
-import Footer from './MainPageFooter';
+import ProjectContainer from './MainComponents/Projects/ProjectContainer';
+import ContactMe from './MainComponents/ContactMe';
+import MainPageFooter from './NavBar/MainPageFooter';
+import Footer from './NavBar/MainPageFooter';
 
 
 function FullWebPage() {

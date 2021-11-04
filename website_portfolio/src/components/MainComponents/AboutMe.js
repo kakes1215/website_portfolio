@@ -2,7 +2,7 @@ import React, { } from 'react';
 
 import { Grommet, Paragraph, Box, Text, Grid } from 'grommet';
 import { grommet } from 'grommet/themes';
-import aboutMePicture from '../images/aboutme.jpg'
+import aboutMePicture from '../../images/aboutme.jpg'
 
 function AboutMe() {
 
