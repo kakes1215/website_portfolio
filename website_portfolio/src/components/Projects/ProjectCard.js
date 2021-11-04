@@ -8,8 +8,8 @@ function ProjectCard(props, project) {
 
     return (
         <Grommet theme="grommet" full>
-            <Box pad='medium' align='start' background='neutral-2' fill>
-                <Card elevation='medium' width='medium'>
+            <Box pad='medium' align='start' fill background='neutral-2'>
+                <Card elevation='medium' width='medium' background='accent-1'>
                     <CardBody height='small'>
                         <Image
                             fit='cover'
@@ -26,14 +26,17 @@ function ProjectCard(props, project) {
                         </Paragraph>
                     </Box>
                     <CardFooter>
-                        <Box direction="row" align="center" gap="medium">
+                        <Box direction="row" align="center" gap="medium" style={{ paddingLeft: '20%', paddingRight: '20%', paddingBottom: '10%', paddingTop: '10%' }}>
                             <Button
+                                primary
                                 hoverIndicator
-                                onClick={() => {
-                                }}
+                                onClick={() => { }}
+                                label='Demo'
                             />
-                            <Button hoverIndicator />
-
+                            <Button hoverIndicator
+                                primary
+                                label='Github'
+                            />
                         </Box>
 
                     </CardFooter>
