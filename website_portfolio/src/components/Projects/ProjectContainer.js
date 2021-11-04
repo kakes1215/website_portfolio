@@ -29,8 +29,8 @@ function ProjectContainer() {
 
     return (
         <>
-            <Grommet theme={grommet} full>
-                <Box pad='large' fill>
+            <Grommet theme={grommet}>
+                <Box >
                     <Box background='neutral-2' pad='medium'>
                         <Text size='4xl' color='accent-2'>Projects</Text>
                     </Box>
