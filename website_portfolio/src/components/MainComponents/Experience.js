@@ -1,7 +1,5 @@
 import React, { } from 'react';
-
-import { Box, Text, Accordion, AccordionPanel, List, Grid } from 'grommet';
-import { CaretRightFill } from 'grommet-icons';
+import { Box, Text, Accordion, AccordionPanel, Grid } from 'grommet';
 
 function Experience() {
     return (

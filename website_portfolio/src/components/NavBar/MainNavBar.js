@@ -1,6 +1,5 @@
 import React, { } from 'react';
-import { grommet } from 'grommet/themes';
-import { Grommet, Header, Nav, Button } from 'grommet';
+import { Header, Nav, Button } from 'grommet';
 
 
 function MainNavBar() {

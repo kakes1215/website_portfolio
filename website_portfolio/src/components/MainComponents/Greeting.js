@@ -1,9 +1,6 @@
 import React, { } from 'react';
-import { grommet } from 'grommet/themes';
-import { Grommet, Paragraph, Box, Text, Grid, Image } from 'grommet';
+import { Paragraph, Box, Text, Grid } from 'grommet';
 import { Down } from 'grommet-icons';
-import Background from '../../images/smallFlowers.jpg'
-
 
 function Greeting() {
     return (

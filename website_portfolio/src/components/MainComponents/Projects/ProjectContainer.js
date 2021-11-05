@@ -1,7 +1,5 @@
 import React, { } from 'react';
-
-import { Grommet, Paragraph, Box, Text, Grid } from 'grommet';
-import { grommet } from 'grommet/themes';
+import { Box, Text } from 'grommet';
 import ProjectCard from './ProjectCard';
 
 function ProjectContainer() {
@@ -29,16 +27,14 @@ function ProjectContainer() {
 
     return (
         <>
-            <Grommet theme={grommet}>
-                <Box >
-                    <Box pad='medium'>
-                        <Text size='4xl' color='accent-2'>Projects</Text>
-                    </Box>
-                    <Box direction='row'>
-                        {listProjects}
-                    </Box>
+            <Box >
+                <Box pad='medium'>
+                    <Text size='4xl' color='accent-2'>Projects</Text>
                 </Box>
-            </Grommet>
+                <Box direction='row'>
+                    {listProjects}
+                </Box>
+            </Box>
 
         </>
 
