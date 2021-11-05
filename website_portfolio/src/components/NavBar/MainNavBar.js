@@ -5,8 +5,8 @@ import { Header, Nav, Button } from 'grommet';
 function MainNavBar() {
     return (
         <>
-            <Header justify='end' pad='large'>
-                <Nav direction='row' focusIndicator='true' pad='medium' style={{ position: 'fixed' }}>
+            <Header pad='small' background={{ color: 'neutral-2', opacity: 'medium' }} style={{ position: 'fixed', right: 10 }} width='100%' justify='end'>
+                <Nav direction='row' focusIndicator='true' pad='small' >
                     <Button defualt label="About Me" />
                     <Button defualt label="Experience" />
                     <Button defualt label="Projects" />

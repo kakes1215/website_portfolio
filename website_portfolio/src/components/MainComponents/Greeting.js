@@ -18,7 +18,7 @@ function Greeting() {
                     pad='small'
 
                 >
-                    <Box background={{ color: 'neutral-2', opacity: 'strong' }} round='large' pad='large'>
+                    <Box pad='large'>
                         <Box gridArea='helloText' align="start">
                             <Text size="xlarge" color="accent-1">Hello, my name is</Text>
                         </Box>
@@ -34,7 +34,7 @@ function Greeting() {
                     </Box>
                 </Grid>
             </Box>
-            <Box gridArea='downArrow' width='75%' animation={{ type: 'pulse', duration: 1000 }} style={{ alignItems: 'center', paddingLeft: '20%' }}>
+            <Box gridArea='downArrow' width='75%' animation={{ type: 'pulse', duration: 2000 }} style={{ alignItems: 'center', paddingLeft: '20%' }}>
                 <Down color='accent-1' size='large' />
                 <Down color='accent-1' size='large' />
             </Box>
