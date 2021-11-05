@@ -7,8 +7,8 @@ import { grommet } from 'grommet/themes';
 function ProjectCard(props, project) {
 
     return (
-        <Grommet theme="grommet" full>
-            <Box pad='medium' align='start' fill background='neutral-2'>
+        <Grommet theme="grommet">
+            <Box pad='medium' align='start'>
                 <Card elevation='medium' width='medium' background='accent-1'>
                     <CardBody height='small'>
                         <Image

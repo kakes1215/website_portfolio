@@ -10,10 +10,10 @@ function ContactMe() {
         <>
             <Grommet theme={grommet}>
                 <Box >
-                    <Box background='neutral-2' pad='medium'>
+                    <Box>
                         <Text size='4xl' color='accent-2'>Contact Me</Text>
                     </Box>
-                    <Box align="center" pad="large" background='neutral-2'>
+                    <Box align="center" pad="large">
                         <Form>
                             <FormField
                                 name="firstName"

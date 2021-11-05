@@ -6,7 +6,7 @@ import { CaretRightFill } from 'grommet-icons';
 function Experience() {
     return (
         <>
-            <Box pad='small' background='neutral-2' fill >
+            <Box pad='small' >
                 <Grid
                     rows={['auto']}
                     columns={['1/4', '3/4']}

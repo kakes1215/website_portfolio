@@ -13,8 +13,8 @@ import MainPageFooter from './NavBar/MainPageFooter';
 function App() {
   return (
     <>
-      <Grommet theme="grommet">
-        <Box background='neutral-2'>
+      <Grommet theme="grommet" full >
+        <Box background='neutral-2' fill >
           <Grid
             rows={['auto', 'flex', 'flex']}
             columns={['10%', 'flex']}

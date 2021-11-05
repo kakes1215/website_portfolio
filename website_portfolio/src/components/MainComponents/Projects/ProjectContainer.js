@@ -31,7 +31,7 @@ function ProjectContainer() {
         <>
             <Grommet theme={grommet}>
                 <Box >
-                    <Box background='neutral-2' pad='medium'>
+                    <Box pad='medium'>
                         <Text size='4xl' color='accent-2'>Projects</Text>
                     </Box>
                     <Box direction='row'>

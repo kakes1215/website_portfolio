@@ -13,28 +13,25 @@ import Footer from './NavBar/MainPageFooter';
 function FullWebPage() {
     return (
         <>
-            <div>
+            <Box>
                 <Greeting />
-            </div>
-            <div>
+            </Box>
+            <Box>
                 <AboutMe />
-            </div>
-            <div>
+            </Box>
+            <Box>
                 <Experience />
-            </div>
-            <div>
+            </Box>
+            <Box>
                 <ProjectContainer />
-            </div>
-            <div>
+            </Box>
+            <Box>
                 <ContactMe />
-            </div>
-            <div>
+            </Box>
+            <Box>
                 <Footer />
-            </div>
-
-
+            </Box>
         </>
-
     )
 }
 
