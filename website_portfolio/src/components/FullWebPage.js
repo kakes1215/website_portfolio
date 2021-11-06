@@ -1,5 +1,5 @@
 import React, { } from 'react';
-import Greeting from './MainComponents/Greeting';
+import { Box } from 'grommet';
 import AboutMe from './MainComponents/AboutMe';
 import Experience from './MainComponents/Experience/ExperienceComponent';
 import ProjectContainer from './MainComponents/Projects/ProjectContainer';
@@ -10,12 +10,21 @@ import Footer from './NavBar/MainPageFooter';
 function FullWebPage() {
     return (
         <>
-            <Greeting />
-            <AboutMe />
-            <Experience />
-            <ProjectContainer />
-            <ContactMe />
-            <Footer />
+            <Box>
+                <AboutMe />
+            </Box>
+            <Box>
+                <Experience />
+            </Box>
+            <Box>
+                <ProjectContainer />
+            </Box>
+            <Box>
+                <ContactMe />
+            </Box>
+            <Box>
+                <Footer />
+            </Box>
         </>
     )
 }

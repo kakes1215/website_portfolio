@@ -4,6 +4,7 @@ import FullWebPage from './FullWebPage';
 import MainNavBar from './NavBar/MainNavBar';
 import SocialMediaLinks from './NavBar/SocialMediaLinks';
 import Background from './Background';
+import Greeting from './MainComponents/Greeting';
 
 function App() {
   return (
@@ -14,17 +15,20 @@ function App() {
         </Box>
 
         <Grid
-          rows={['3%', 'auto', 'auto']}
+          rows={['5%', 'auto', 'auto', 'auto']}
           columns={['5%', 'auto']}
           areas={[
             ['mainNav', 'mainNav'],
+            ['greeting', 'greeting'],
             ['socialMedia', 'fullWebPage'],
-            ['footer', 'footer']
           ]}
           pad='none'
         >
           <Box gridArea='mainNav'>
             <MainNavBar />
+          </Box>
+          <Box gridArea='greeting'>
+            <Greeting />
           </Box>
           <Box gridArea='socialMedia'>
             <SocialMediaLinks />

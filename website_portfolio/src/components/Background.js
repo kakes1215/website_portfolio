@@ -23,7 +23,6 @@ function Background() {
             config={config}
             num={10}
         />
-
     );
 }
 export default Background;

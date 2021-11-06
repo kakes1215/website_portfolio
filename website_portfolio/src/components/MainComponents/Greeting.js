@@ -5,7 +5,7 @@ import { Down } from 'grommet-icons';
 function Greeting() {
     return (
         <>
-            <Box pad='large' margin='medium' round='medium'>
+            <Box margin='large'>
                 <Grid
                     rows={['auto', 'auto', 'auto']}
                     columns={['auto']}
@@ -31,13 +31,14 @@ function Greeting() {
                                 I'm an aspiring Software Engineer that specializes in Front End and Full Stack Development for web applications.
                             </Paragraph>
                         </Box>
+                        <Box gridArea='downArrow' width='75%' animation={{ type: 'pulse', duration: 2000 }} style={{ alignItems: 'center', paddingLeft: '20%' }}>
+                            <Down color='accent-1' size='large' />
+                            <Down color='accent-1' size='large' />
+                        </Box>
                     </Box>
                 </Grid>
             </Box>
-            <Box gridArea='downArrow' width='75%' animation={{ type: 'pulse', duration: 2000 }} style={{ alignItems: 'center', paddingLeft: '20%' }}>
-                <Down color='accent-1' size='large' />
-                <Down color='accent-1' size='large' />
-            </Box>
+
         </>
     )
 
