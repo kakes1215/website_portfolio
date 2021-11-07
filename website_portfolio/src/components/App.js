@@ -1,10 +1,10 @@
 import React, { } from 'react';
 import { Grommet, Box, Grid, Stack } from 'grommet';
 import FullWebPage from './FullWebPage';
-import MainNavBar from './NavBar/MainNavBar';
 import SocialMediaLinks from './NavBar/SocialMediaLinks';
 import Background from './Background';
 import Greeting from './MainComponents/Greeting';
+import MainNavBar from './NavBar/MainNavBar'
 
 function App() {
   return (

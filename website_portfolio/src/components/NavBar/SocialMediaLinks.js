@@ -1,12 +1,12 @@
 import React, { } from 'react';
-import { Header, Nav, Button } from 'grommet';
+import { Header, Nav, Button, Box } from 'grommet';
 import { Github, Linkedin, MailOption } from 'grommet-icons';
-
+import { Down } from 'grommet-icons';
 
 function SocialMediaLinks() {
     return (
         <>
-            <Header style={{ position: 'fixed', bottom: 40 }} background={{ color: 'neutral-2', opacity: 'strong' }}>
+            <Header style={{ position: 'fixed', bottom: 50 }} background={{ color: 'neutral-2' }}>
                 <Nav direction='column'>
                     <Button
                         href='https://github.com/kakes1215'
