@@ -74,14 +74,13 @@ function Experience() {
     ]
     return (
         <>
-            {/* {`${job.company}-${job.title}`} */}
             <Fade bottom>
-                <Box gridArea='jobHistory' background='brand' round='large' pad='medium'>
-                    <Text size='4xl' color='accent-2'>About Me</Text>
+                <Box gridArea='jobHistory' background='neutral-2' round='small' pad='medium'>
+                    <Text size='4xl' color='accent-1'>Experience</Text>
                     <Tabs pad='medium'>
                         {experiences.map((job) => (
-                            <Tab title={job.title} pad='large'>
-                                <Box pad='large' background='accent-3' round='large'>
+                            <Tab title={job.company} pad='large'>
+                                <Box pad='large' background={{ color: 'accent-3', opacity: '20%' }} round='large'>
                                     <Text size='large' weight='bold' color='accent-2'>{job.title} @ {job.company}</Text>
                                     <Text>{job.description}</Text>
                                     <ul>

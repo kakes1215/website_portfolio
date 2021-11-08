@@ -10,12 +10,12 @@ import Greeting from './MainComponents/Greeting';
 function FullWebPage() {
     return (
         <>
-            {/* <Box>
+            <Box>
                 <Greeting />
             </Box>
             <Box>
                 <AboutMe />
-            </Box> */}
+            </Box>
             <Box>
                 <Experience />
             </Box>
