@@ -26,7 +26,7 @@ function App() {
             <Box gridArea='mainNav'>
               <MainNavBar />
             </Box>
-            <Box gridArea='socialMedia' background='neutral-2'>
+            <Box gridArea='socialMedia'>
               <SocialMediaLinks />
             </Box>
             <Box gridArea='fullWebPage'>

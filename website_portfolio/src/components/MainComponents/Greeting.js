@@ -30,7 +30,7 @@ function Greeting() {
                                 I'm an aspiring Software Engineer that specializes in Front End and Full Stack Development for web applications.
                             </Paragraph>
                         </Box>
-                        <Box gridArea='downArrow' width='75%' animation={{ type: 'pulse', duration: 2000 }} style={{ alignItems: 'center', paddingLeft: '20%' }}>
+                        <Box gridArea='downArrow' width='75%' animation={{ type: 'pulse', duration: 800 }} style={{ alignItems: 'center', paddingLeft: '20%' }}>
                             <Down color='accent-1' size='large' />
                             <Down color='accent-1' size='large' />
                         </Box>
