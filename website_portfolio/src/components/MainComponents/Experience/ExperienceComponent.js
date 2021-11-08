@@ -1,6 +1,5 @@
 import React, { } from 'react';
-import { Box, Text, Grid, Tabs, Tab } from 'grommet';
-import ExperienceItem from './ExperienceItem';
+import { Box, Text, Tabs, Tab } from 'grommet';
 import Fade from 'react-reveal/Fade';
 
 function Experience() {
