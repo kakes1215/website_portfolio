@@ -2,43 +2,40 @@ import React, { } from 'react';
 import { Grommet, Box, Grid, Stack } from 'grommet';
 import FullWebPage from './FullWebPage';
 import SocialMediaLinks from './NavBar/SocialMediaLinks';
-import Background from './Background';
-import Greeting from './MainComponents/Greeting';
 import MainNavBar from './NavBar/MainNavBar'
+import Background from './Background';
 
 function App() {
   return (
     <Grommet full>
-      <Stack center='align'>
-        <Box background='neutral-2'>
+      <Stack>
+        <Box background='neutral-2' fill>
           <Background />
         </Box>
+        <Box>
+          <Grid
+            rows={['5%', 'auto', 'auto']}
+            columns={['5%', 'auto']}
+            areas={[
+              ['mainNav', 'mainNav'],
+              ['socialMedia', 'fullWebPage'],
+            ]}
+            pad='none'
+          >
 
-        <Grid
-          rows={['5%', 'auto', 'auto', 'auto']}
-          columns={['5%', 'auto']}
-          areas={[
-            ['mainNav', 'mainNav'],
-            ['greeting', 'greeting'],
-            ['socialMedia', 'fullWebPage'],
-          ]}
-          pad='none'
-        >
-          <Box gridArea='mainNav'>
-            <MainNavBar />
-          </Box>
-          <Box gridArea='greeting'>
-            <Greeting />
-          </Box>
-          <Box gridArea='socialMedia'>
-            <SocialMediaLinks />
-          </Box>
-          <Box gridArea='fullWebPage'>
-            <FullWebPage />
-          </Box>
-        </Grid>
+            <Box gridArea='mainNav'>
+              <MainNavBar />
+            </Box>
+            <Box gridArea='socialMedia' background='neutral-2'>
+              <SocialMediaLinks />
+            </Box>
+            <Box gridArea='fullWebPage'>
+              <FullWebPage />
+            </Box>
+          </Grid>
+        </Box>
       </Stack>
-    </Grommet>
+    </Grommet >
   );
 }
 

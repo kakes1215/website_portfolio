@@ -16,7 +16,6 @@ function Greeting() {
                         ['downArrow']
                     ]}
                     pad='small'
-
                 >
                     <Box pad='large'>
                         <Box gridArea='helloText' align="start">
@@ -38,7 +37,6 @@ function Greeting() {
                     </Box>
                 </Grid>
             </Box>
-
         </>
     )
 

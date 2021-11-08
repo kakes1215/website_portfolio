@@ -1,7 +1,6 @@
 import React, { } from 'react';
-import { Header, Nav, Button, Box } from 'grommet';
+import { Header, Nav, Button } from 'grommet';
 import { Github, Linkedin, MailOption } from 'grommet-icons';
-import { Down } from 'grommet-icons';
 
 function SocialMediaLinks() {
     return (
