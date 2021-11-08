@@ -1,6 +1,5 @@
 import React, { } from 'react';
-import { Text, Footer, Stack, Box } from 'grommet';
-import Background from '../Background';
+import { Text, Footer, Box } from 'grommet';
 
 function MainPageFooter() {
     return (
