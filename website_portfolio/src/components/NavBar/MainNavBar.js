@@ -1,13 +1,11 @@
 import React, { } from 'react';
-import { grommet } from 'grommet/themes';
-import { Grommet, Header, Nav, Button } from 'grommet';
-
+import { Header, Nav, Button } from 'grommet';
 
 function MainNavBar() {
     return (
         <>
-            <Header background='neutral-2' justify='end' pad='large' width='auto'>
-                <Nav direction='row' focusIndicator='true' pad='medium' style={{ position: 'fixed' }}>
+            <Header pad='small' justify='end' style={{ position: 'fixed', width: '100%', paddingRight: 40 }} background={{ color: 'neutral-2' }}>
+                <Nav direction='row' focusIndicator='true' pad='small' >
                     <Button defualt label="About Me" />
                     <Button defualt label="Experience" />
                     <Button defualt label="Projects" />

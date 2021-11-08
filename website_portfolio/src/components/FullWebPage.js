@@ -1,40 +1,42 @@
 import React, { } from 'react';
-import Greeting from './HomePage/Greeting';
-import AboutMe from './AboutMe';
-import Divider from './Divider';
-import { Parallax, ParallaxLayer } from '@react-spring/parallax'
-import Experience from './Experience';
 import { Box } from 'grommet';
-
-
+import AboutMe from './MainComponents/AboutMe';
+import Experience from './MainComponents/Experience/ExperienceComponent';
+import ProjectContainer from './MainComponents/Projects/ProjectContainer';
+import ContactMe from './MainComponents/ContactMe';
+import Footer from './NavBar/MainPageFooter';
+import Greeting from './MainComponents/Greeting';
+import Divider from './Divider';
 
 function FullWebPage() {
     return (
-        <div id='test1'>
-            {/* <Box width='30px'>
-                <Parallax pages={2}>
-                    <ParallaxLayer offset={0} speed={0.5} >
-                        <Greeting />
-                    </ParallaxLayer>
-                    <ParallaxLayer offset={1} speed={0} >
-                        <Divider />
-                    </ParallaxLayer>
-                    <ParallaxLayer offset={1} speed={0.5}>
-                        <AboutMe />
-                    </ParallaxLayer> */}
-            {/* <ParallaxLayer offset={.99} speed={2} >
-                    <Divider />
-                </ParallaxLayer>
-                <ParallaxLayer offset={1.1} speed={1}>
-                    <Experience />
-                </ParallaxLayer> */}
-
-            {/* </Parallax> */}
-
-            {/* </Box> */}
-
-        </div>
-    );
+        <>
+            <Box>
+                <Greeting />
+            </Box>
+            <Box>
+                <Divider />
+            </Box>
+            <Box>
+                <AboutMe />
+            </Box>
+            <Divider />
+            <Box>
+                <Experience />
+            </Box>
+            <Divider />
+            <Box>
+                <ProjectContainer />
+            </Box>
+            <Divider />
+            <Box>
+                <ContactMe />
+            </Box>
+            <Divider />
+            <Box>
+                <Footer />
+            </Box>
+        </>
+    )
 }
-
 export default FullWebPage;
