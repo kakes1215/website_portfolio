@@ -4,8 +4,8 @@ import { Paragraph, Box, Card, CardBody, Heading, Button, CardFooter, Image } fr
 function ProjectCard(props, project) {
 
     return (
-        <Box pad='medium' align='start'>
-            <Card elevation='medium' width='medium' background='accent-1'>
+        <Box pad='medium' align='center'>
+            <Card elevation='small' width='medium' background='accent-1'>
                 <CardBody height='small'>
                     <Image
                         fit='cover'
@@ -14,7 +14,7 @@ function ProjectCard(props, project) {
                     />
                 </CardBody>
                 <Box pad={{ horizontal: 'medium' }} responsive={false}>
-                    <Heading level="3" margin={{ vertical: 'medium' }}>
+                    <Heading level="3" alignSelf='center' margin={{ vertical: 'medium' }}>
                         {props.project.name}
                     </Heading>
                     <Paragraph margin={{ top: 'none' }}>
@@ -22,16 +22,20 @@ function ProjectCard(props, project) {
                     </Paragraph>
                 </Box>
                 <CardFooter>
-                    <Box direction="row" align="center" gap="medium" style={{ paddingLeft: '20%', paddingRight: '20%', paddingBottom: '10%', paddingTop: '10%' }}>
+                    <Box direction="row" align="center" gap="medium" style={{ paddingLeft: '15%', paddingRight: '20%', paddingBottom: '10%', paddingTop: '10%' }}>
                         <Button
                             primary
-                            hoverIndicator
-                            onClick={() => { }}
+                            color='accent-2'
+                            background='accent-2'
                             label='Demo'
+                            size='large'
                         />
-                        <Button hoverIndicator
+                        <Button
                             primary
+                            color='accent-2'
+                            hoverIndicator
                             label='Github'
+                            size='large'
                         />
                     </Box>
 

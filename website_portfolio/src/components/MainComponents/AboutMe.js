@@ -22,7 +22,7 @@ function AboutMe() {
                                 gridArea="aboutMeWords"
                                 height='medium'
                                 width='70%'
-                                background='neutral-2'
+                                background={{ color: 'accent-1', opacity: 'medium' }}
                                 round='large'
                                 pad='medium'
                                 style={{ marginLeft: '10%', marginTop: '5%' }}>

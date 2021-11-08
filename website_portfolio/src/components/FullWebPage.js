@@ -19,7 +19,7 @@ function FullWebPage() {
             <Box>
                 <Experience />
             </Box>
-            {/* <Box>
+            <Box>
                 <ProjectContainer />
             </Box>
 
@@ -29,7 +29,7 @@ function FullWebPage() {
 
             <Box>
                 <Footer />
-            </Box> */}
+            </Box>
         </>
     )
 }
