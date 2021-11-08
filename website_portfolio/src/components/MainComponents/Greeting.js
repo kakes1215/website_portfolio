@@ -5,7 +5,7 @@ import { Down } from 'grommet-icons';
 function Greeting() {
     return (
         <>
-            <Box margin='large'>
+            <Box pad='large'>
                 <Grid
                     rows={['auto', 'auto', 'auto']}
                     columns={['auto']}

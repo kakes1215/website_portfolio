@@ -1,7 +1,6 @@
 import React, { } from 'react';
 import { Paragraph, Box, Text, Grid, Image } from 'grommet';
 import aboutMePicture from '../../images/aboutme.jpg';
-import ScrollAnimation from 'react-animate-on-scroll';
 import Slide from 'react-reveal/Slide';
 import Fade from 'react-reveal/Fade';
 
