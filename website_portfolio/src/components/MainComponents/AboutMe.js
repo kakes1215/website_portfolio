@@ -9,8 +9,8 @@ function AboutMe() {
         <>
             <Box height={{ min: '100vh' }} align='center' background={{ color: 'accent-2', opacity: 'medium' }}>
                 <Fade bottom>
-                    <Box background='brand' round='medium' align='center' margin={{ top: 'xlarge' }}>
-                        <Text size='4xl' color='accent-2'>About Me</Text>
+                    <Box background='brand' round='medium' align='left' margin={{ top: 'xlarge' }}>
+                        <Text size='4xl' color='accent-2' style={{ paddingLeft: '5vh', paddingTop: '2vh' }}>About Me</Text>
                         <Grid
                             rows={['100%']}
                             columns={['3/4', '1/4']}

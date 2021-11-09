@@ -72,9 +72,16 @@ function Experience() {
         },
     ]
     return (
-        <>
+        <Box height={{ min: '100vh' }} align='center' background={{ color: 'accent-1', opacity: 'medium' }}>
             <Fade bottom>
-                <Box gridArea='jobHistory' background={{ color: 'neutral-2' }} round='small' pad='medium'>
+                <Box
+                    height='auto'
+                    width='90%'
+                    background={{ color: 'neutral-2', opacity: 'strong' }}
+                    round='large'
+                    pad='medium'
+                    style={{ marginLeft: '5%', marginTop: '5%' }}
+                >
                     <Text size='4xl' color='accent-2'>Experience</Text>
                     <Tabs pad='medium'>
                         {experiences.map((job) => (
@@ -93,7 +100,7 @@ function Experience() {
                     </Tabs>
                 </Box>
             </Fade>
-        </>
+        </Box>
     )
 }
 export default Experience;
