@@ -6,33 +6,25 @@ import ProjectContainer from './MainComponents/Projects/ProjectContainer';
 import ContactMe from './MainComponents/ContactMe';
 import Footer from './NavBar/MainPageFooter';
 import Greeting from './MainComponents/Greeting';
-import Divider from './Divider';
 
 function FullWebPage() {
     return (
         <>
-            <Box>
+            <Box id='greeting'>
                 <Greeting />
             </Box>
-            <Box>
-                <Divider />
-            </Box>
-            <Box>
+            <Box id='aboutMe' pad='none' >
                 <AboutMe />
             </Box>
-            <Divider />
-            <Box>
+            <Box id='experience' >
                 <Experience />
             </Box>
-            <Divider />
-            <Box>
+            <Box id='projects'>
                 <ProjectContainer />
             </Box>
-            <Divider />
-            <Box>
+            <Box id='contactMe'>
                 <ContactMe />
             </Box>
-            <Divider />
             <Box>
                 <Footer />
             </Box>

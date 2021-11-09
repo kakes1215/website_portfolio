@@ -6,7 +6,7 @@ function Divider() {
     return (
         <>
             <Fade bottom>
-                <Box background='red' size='large'>
+                <Box background='red' size='large' fill>
                 </Box>
             </Fade>
             <Fade top>

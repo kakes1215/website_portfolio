@@ -1,23 +1,27 @@
 import React, { } from 'react';
-import { Paragraph, Box, Text, Grid } from 'grommet';
+import { Paragraph, Box, Text, Grid, Stack } from 'grommet';
 import { Down } from 'grommet-icons';
+import Background from '../Background';
 
 function Greeting() {
     return (
         <>
-            <Box pad='large'>
-                <Grid
-                    rows={['auto', 'auto', 'auto']}
-                    columns={['auto']}
-                    areas={[
-                        ['helloText'],
-                        ['nameText'],
-                        ['introParagraph'],
-                        ['downArrow']
-                    ]}
-                    pad='small'
-                >
-                    <Box pad='large'>
+            <Stack height={{ min: '100vh' }}>
+                <Box background='neutral-2' fill>
+                    <Background />
+                </Box>
+                <Box pad={{ top: '10%' }}>
+                    <Grid
+                        rows={['auto', 'auto', 'auto']}
+                        columns={['auto']}
+                        areas={[
+                            ['helloText'],
+                            ['nameText'],
+                            ['introParagraph'],
+                            ['downArrow']
+                        ]}
+                        pad='small'
+                    >
                         <Box gridArea='helloText' align="start">
                             <Text size="xlarge" color="accent-1">Hello, my name is</Text>
                         </Box>
@@ -34,9 +38,9 @@ function Greeting() {
                             <Down color='accent-1' size='large' />
                             <Down color='accent-1' size='large' />
                         </Box>
-                    </Box>
-                </Grid>
-            </Box>
+                    </Grid>
+                </Box>
+            </Stack>
         </>
     )
 
