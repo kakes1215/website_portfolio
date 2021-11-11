@@ -1,11 +1,12 @@
 import React, { } from 'react';
-import { Paragraph, Box, Card, CardBody, Heading, Button, CardFooter, Image } from 'grommet';
+import { Paragraph, Box, Card, CardBody, Heading, CardFooter, Image, Anchor, Button } from 'grommet';
+import { FormNext} from 'grommet-icons';
 
 function ProjectCard(props, project) {
 
     return (
-        <Box pad='medium' align='center'>
-            <Card elevation='small' width='medium' background='accent-1'>
+        <Box pad='small' align='center'>
+            <Card elevation='small' width='300px' background='accent-1'>
                 <CardBody height='small'>
                     <Image
                         fit='cover'
@@ -14,28 +15,35 @@ function ProjectCard(props, project) {
                     />
                 </CardBody>
                 <Box pad={{ horizontal: 'medium' }} responsive={false}>
-                    <Heading level="3" alignSelf='center' margin={{ vertical: 'medium' }}>
+                    <Heading level="3" alignSelf='center' margin={{ vertical: 'medium' }} color='neutral-2'>
                         {props.project.name}
                     </Heading>
-                    <Paragraph margin={{ top: 'none' }}>
+                    <Paragraph margin={{ top: 'none' }} textAlign='center'>
                         {props.project.description}
                     </Paragraph>
                 </Box>
                 <CardFooter>
-                    <Box direction="row" align="center" gap="medium" style={{ paddingLeft: '15%', paddingRight: '20%', paddingBottom: '10%', paddingTop: '10%' }}>
+                    <Box direction="row" pad={{ left: '5%', top: '5%', bottom:'10%', right:'10%'}} margin='small'>
                         <Button
                             primary
+                            hoverIndicator={{color: 'accent-1'}}
+                            href="#"
                             color='accent-2'
                             background='accent-2'
                             label='Demo'
-                            size='large'
+                            size='medium'
+                            pad='xlarge'
+                            margin='small'
                         />
                         <Button
                             primary
                             color='accent-2'
-                            hoverIndicator
+                            hoverIndicator ={{color: 'accent-1'}}
                             label='Github'
-                            size='large'
+                            size='medium'
+                            pad='xlarge'
+                            margin='small'
+
                         />
                     </Box>
 

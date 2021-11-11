@@ -7,17 +7,17 @@ function ProjectContainer() {
     const projects = [
         {
             name: 'Name of Project',
-            description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus aliquam tempor ante, nec ullamcorper metus cursus quis. Mauris at tellus arcu. Integer hendrerit tristique turpis, a tempor mauris posuere eu.',
+            description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus aliquam tempor ante, nec ullamcorper metus cursus quis.',
             image: 'https://www.planetware.com/wpimages/2020/02/france-in-pictures-beautiful-places-to-photograph-eiffel-tower.jpg'
         },
         {
             name: 'Name of Project',
-            description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus aliquam tempor ante, nec ullamcorper metus cursus quis. Mauris at tellus arcu. Integer hendrerit tristique turpis, a tempor mauris posuere eu.',
+            description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus aliquam tempor ante, nec ullamcorper metus cursus quis.',
             image: 'https://www.planetware.com/wpimages/2020/02/france-in-pictures-beautiful-places-to-photograph-eiffel-tower.jpg'
         },
         {
             name: 'Name of Project',
-            description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus aliquam tempor ante, nec ullamcorper metus cursus quis. Mauris at tellus arcu. Integer hendrerit tristique turpis, a tempor mauris posuere eu.',
+            description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus aliquam tempor ante, nec ullamcorper metus cursus quis.',
             image: 'https://www.planetware.com/wpimages/2020/02/france-in-pictures-beautiful-places-to-photograph-eiffel-tower.jpg'
         },
     ];
@@ -36,8 +36,8 @@ function ProjectContainer() {
                         <Box>
                             <Text size='4xl' color='accent-2'>Projects</Text>
                         </Box>
-                        <Carousel alignSelf='center' pad='medium'>
-                            <Box direction='row'>
+                        <Carousel alignSelf='center' pad='medium' width='80%'>
+                            <Box direction='row' pad='medium'>
                                 {listProjects}
                             </Box>
                         </Carousel>

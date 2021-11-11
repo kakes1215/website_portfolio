@@ -14,8 +14,8 @@ function FullWebPage() {
         <>
             <Grommet full>
                 <Stack>
-                    <Box>
-                        <Main background='neutral-2'>
+                    <Box background='neutral-2'>
+                        <Main background='neutral-2' width='95%' alignSelf='center' pad='medium'>
                             <section id='greeting'>
                                 <Greeting />
                             </section>
@@ -48,7 +48,7 @@ function FullWebPage() {
                             <MainNavBar />
                         </Header>
                         <Sidebar
-                            style={{ position: 'fixed', top: 500, left: 0 }}
+                            style={{ position: 'fixed', top: '60%', left: 0 }}
                             width='5%'
                             height={{ min: '100%' }}
                             background={{ color: 'neutral-2', opacity: 'strong' }}
