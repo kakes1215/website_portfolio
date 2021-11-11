@@ -1,5 +1,5 @@
 import React, { } from 'react';
-import { Grommet, Stack, Main, Header, Sidebar, Box, Text, Footer } from 'grommet';
+import { Grommet, Stack, Main, Header, Sidebar, Box, Footer } from 'grommet';
 import Greeting from './MainComponents/Greeting';
 import AboutMe from './MainComponents/AboutMe';
 import Experience from './MainComponents/Experience/ExperienceComponent';

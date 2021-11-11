@@ -2,7 +2,6 @@ import React, { } from 'react';
 import { Box, Carousel, Text } from 'grommet';
 import ProjectCard from './ProjectCard';
 import Fade from 'react-reveal/Fade';
-import Slide from 'react-reveal/Slide';
 
 function ProjectContainer() {
     const projects = [
