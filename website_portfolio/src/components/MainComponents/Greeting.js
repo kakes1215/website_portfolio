@@ -5,12 +5,12 @@ import Background from '../Background';
 
 function Greeting() {
     return (
-        <>
+        <Box id='greeting'>
             <Stack height={{ min: '100vh' }}>
                 <Box background='neutral-2' fill>
                     <Background />
                 </Box>
-                <Box pad={{ top: '10%' }}>
+                <Box pad={{ top: '10%', left: '10%' }}>
                     <Grid
                         rows={['auto', 'auto', 'auto']}
                         columns={['auto']}
@@ -41,7 +41,7 @@ function Greeting() {
                     </Grid>
                 </Box>
             </Stack>
-        </>
+        </Box>
     )
 
 }

@@ -7,7 +7,7 @@ import Fade from 'react-reveal/Fade';
 function AboutMe() {
     return (
         <>
-            <Box height={{ min: '100vh' }} align='center' background={{ color: 'accent-2', opacity: 'medium' }}>
+            <Box height={{ min: '100vh' }} align='center' background={{ color: 'neutral-2' }}>
                 <Fade bottom>
                     <Box background='brand' round='medium' align='left' margin={{ top: 'xlarge' }}>
                         <Text size='4xl' color='accent-2' style={{ paddingLeft: '5vh', paddingTop: '2vh' }}>About Me</Text>

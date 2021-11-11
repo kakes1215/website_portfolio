@@ -2,6 +2,7 @@ import React, { } from 'react';
 import { Box, Carousel, Text } from 'grommet';
 import ProjectCard from './ProjectCard';
 import Fade from 'react-reveal/Fade';
+import Slide from 'react-reveal/Slide';
 
 function ProjectContainer() {
     const projects = [
@@ -30,18 +31,20 @@ function ProjectContainer() {
 
     return (
         <>
-            <Fade bottom>
-                <Box background={{ color: 'brand' }} round='large' pad={{ left: 'large', top: 'medium' }}>
-                    <Box>
-                        <Text size='4xl' color='accent-2'>Projects</Text>
-                    </Box>
-                    <Carousel alignSelf='center'>
-                        <Box direction='row'>
-                            {listProjects}
+            <Box background='neutral-2' height={{ min: '100vh' }} width='90%' margin={{ left: 'xlarge' }}>
+                <Fade bottom delay={300}>
+                    <Box background={{ color: 'brand' }} round='large' pad={{ left: 'large', top: 'medium' }}>
+                        <Box>
+                            <Text size='4xl' color='accent-2'>Projects</Text>
                         </Box>
-                    </Carousel>
-                </Box>
-            </Fade>
+                        <Carousel alignSelf='center' pad='medium'>
+                            <Box direction='row'>
+                                {listProjects}
+                            </Box>
+                        </Carousel>
+                    </Box>
+                </Fade>
+            </Box>
         </>
     )
 }

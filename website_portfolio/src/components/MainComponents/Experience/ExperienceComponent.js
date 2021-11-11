@@ -1,5 +1,6 @@
 import React, { } from 'react';
 import { Box, Text, Tabs, Tab } from 'grommet';
+import Slide from 'react-reveal/Slide';
 import Fade from 'react-reveal/Fade';
 
 function Experience() {
@@ -72,32 +73,34 @@ function Experience() {
         },
     ]
     return (
-        <Box height={{ min: '100vh' }} align='center' background={{ color: 'accent-1', opacity: 'medium' }}>
+        <Box height={{ min: '100vh' }} align='center' background={{ color: 'neutral-2' }}>
             <Fade bottom>
                 <Box
-                    height='auto'
+                    height='80vh'
                     width='90%'
-                    background={{ color: 'neutral-2', opacity: 'strong' }}
+                    background={{ color: 'accent-3', opacity: 'weak' }}
                     round='large'
-                    pad='medium'
+                    pad='large'
                     style={{ marginLeft: '5%', marginTop: '5%' }}
                 >
-                    <Text size='4xl' color='accent-2'>Experience</Text>
-                    <Tabs pad='medium'>
-                        {experiences.map((job) => (
-                            <Tab title={job.company} pad='large'>
-                                <Box pad='large' background={{ color: 'brand', opacity: 'strong' }} round='large'>
-                                    <Text size='large' weight='bold' color='accent-2'>{job.title} @ {job.company}</Text>
-                                    <Text>{job.description}</Text>
-                                    <ul>
-                                        {job.listItems.map((item) => (
-                                            <li>{item}</li>
-                                        ))}
-                                    </ul>
-                                </Box>
-                            </Tab>
-                        ))}
-                    </Tabs>
+                    <Slide left>
+                        <Text size='4xl' color='accent-2'>Experience</Text>
+                        <Tabs pad='medium'>
+                            {experiences.map((job) => (
+                                <Tab title={job.company} pad='large'>
+                                    <Box pad='large' background={{ color: 'brand', opacity: 'strong' }} round='large'>
+                                        <Text size='large' weight='bold' color='accent-2'>{job.title} @ {job.company}</Text>
+                                        <Text>{job.description}</Text>
+                                        <ul>
+                                            {job.listItems.map((item) => (
+                                                <li>{item}</li>
+                                            ))}
+                                        </ul>
+                                    </Box>
+                                </Tab>
+                            ))}
+                        </Tabs>
+                    </Slide>
                 </Box>
             </Fade>
         </Box>
